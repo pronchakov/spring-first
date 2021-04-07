@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!--    <bean id="logicBean" class="edu.spring.Logic">-->
+<!--        <property name="dao" ref="daoBean"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="daoBean" class="edu.spring.Dao">-->
+<!--        <constructor-arg name="connection" value="fvsdfds"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="uiBean" class="edu.spring.UI">-->
+<!--        <property name="logic" ref="logicBean"/>-->
+<!--    </bean>-->
+
+
+<!--    <bean id="logic" class="edu.spring.Logic"/>-->
+
+<!--    <bean id="dao" class="edu.spring.Dao" init-method="init"/>-->
+
+<!--    <bean id="ui" class="edu.spring.UI" scope="prototype"/>-->
+
+    <bean id="now" class="java.util.Date" lazy-init="true" scope="prototype"/>
+
+</beans>
+
